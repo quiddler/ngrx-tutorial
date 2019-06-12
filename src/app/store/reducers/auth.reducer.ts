@@ -18,6 +18,7 @@ export function reducer(state = initialState, action: authActions.AuthActions): 
 }
 
 function handleSetAuths(state: State, action: authActions.SetAuths): State {
+  console.log(action.payload);
   return {
     ...state,
     userName: action.payload

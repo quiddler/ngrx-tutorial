@@ -16,5 +16,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.store.dispatch(new authActions.LoadAuths());
+    console.log(this.store);
   }
 }
