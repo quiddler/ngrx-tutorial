@@ -11,10 +11,12 @@ import { environment } from '../environments/environment';
 import { EffectsModule } from '@ngrx/effects';
 import { AppEffects } from './store/effects/app.effects';
 import { AuthEffects } from './store/effects/auth.effects';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,

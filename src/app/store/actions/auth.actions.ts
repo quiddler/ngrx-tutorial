@@ -11,7 +11,7 @@ export class LoadAuths implements Action {
 
 export class SetAuths implements Action {
   readonly type = AuthActionTypes.SetAuths;
-  constructor(public payload: string) {}
+  constructor(public payload: { userName: string, friendlyName: string}) {}
 }
 
 export type AuthActions = LoadAuths | SetAuths;
