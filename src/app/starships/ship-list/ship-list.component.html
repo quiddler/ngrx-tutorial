@@ -1,0 +1,17 @@
+<h1>{{user$ | async}}</h1>
+<hr>
+<h2>First 10 starships from api</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ship of starships$ | async">
+      <td style="width: 33.333%">{{ship.name}}</td>
+      <td style="width: 66.666%">{{ship.model}}</td>
+    </tr>
+  </tbody>
+</table>
