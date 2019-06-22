@@ -8,7 +8,7 @@ export interface StarshipsState {
 }
 
 export interface State extends fromRoot.State {
-    ships: StarshipsState;
+    starships: StarshipsState;
 }
 
 export const reducers: ActionReducerMap<StarshipsState> = {

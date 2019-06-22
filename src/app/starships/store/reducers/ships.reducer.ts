@@ -1,4 +1,3 @@
-
 import * as fromShipActions from '../actions/ships.actions';
 
 export interface State {
